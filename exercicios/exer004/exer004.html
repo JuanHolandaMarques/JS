@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   
+
+    <title>seletores</title>
+</head>
+<body>
+    
+    <h1>
+        Lorem ipsum dolor
+    </h1>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ex fugiat assumenda sapiente quasi voluptatibus optio laudantium reprehenderit? Reprehenderit animi nostrum aliquid necessitatibus architecto ut ratione eos assumenda nihil repellendus?
+
+    </p>
+
+    <script>
+        var pergModo = prompt("Prefere o site em modo Noturno ou Claro?")
+        var modoSite = document.getElementsByTagName('body')[0]
+        
+        if( pergModo == "Noturno"){
+           modoSite.style.backgroundColor = 'black'
+           modoSite.style.color = 'white'
+        } 
+        else if( pergModo == "Claro"){
+            modoSite.style.color = "red"
+        } 
+        else if(pergModo !== "Noturno" || "Claro" ){
+            alert("Esse modo não existe, digite novamente")
+        }
+        
+        
+        
+    </script>
+</body>
+</html>
