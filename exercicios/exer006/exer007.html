@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        input{
+            text-align: center;
+            
+            
+        }
+
+        #res{
+            border: 1px solid rgba(0, 0, 0, 0.445);
+            margin-top: 10px;
+            width: 70px;
+            padding: 10px;
+
+            text-align: center;
+            
+        }
+
+    </style>
+
+    <title>teste de input</title>
+</head>
+<body>
+    
+    <input type="number" name="txnum1" id="txnum1">
+    <input type="number" name="txnum2" id="txnum2">
+    <input type="button" value="Somar" onclick="soma()">
+    
+    <div id="res">
+        Resultado
+    </div>
+
+
+    <script>
+        function soma() {
+            var txn1 = document.getElementById('txnum1')
+            var txn2 = document.getElementById('txnum2')
+            var res = document.getElementById('res')
+            var n1 = Number(txn1.value)
+            var n2 = Number(txn2.value)
+            var s = n1 + n2
+
+            res.innerHTML = s
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        #teste{
+            background-color: yellowgreen;
+            width: 200px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+        }
+       
+
+
+    </style>
+
+    <title>eventos</title>
+</head>
+<body>
+    
+    <p id="teste">
+        Teste
+    </p>
+
+    <script>
+        var test = document.getElementById('teste')
+
+        test.addEventListener('mouseenter', entrou)
+        test.addEventListener('mouseout', saiu)
+        test.addEventListener('click', clicou)
+        test.addEventListener('dblclick', clicouduplo )
+
+        function entrou(){
+            test.style.background = 'red'
+        }
+
+        function saiu (){
+            test.style.background = 'yellowgreen'
+            
+        }
+
+        function clicou (){
+            test.innerText = 'Ai!'
+        }
+        function clicouduplo (){
+            test.innerText = 'PARA COM ISSO!'
+        }
+
+        
+
+
+    </script>
+</body>
+</html>
