@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.
+    0">
+    
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="velocidade">
+       Com quantos km/h você passou no radar? <input type="number" name="txtVeloc" id="txtVeloc"> km/h 
+    </div>
+
+    <div id="botaoSoma" onclick="verifVeloc()">
+        <input type="button" value="Verificar">
+    </div>
+
+    <div id="resultado">
+
+    </div>
+
+    <script>
+        var carVeloc = document.getElementById('txtVeloc')
+
+        function verifVeloc(){
+
+            var result = document.querySelector('div#resultado')
+            var multVeloc = Number(carVeloc.value)
+
+            if( multVeloc >= 100 ){
+                result.innerHTML = 'Você foi <strong> multado! </strong>'
+            }else{
+                result.innerHTML = 'Nenhuma infração de velocidade foi cometida.'
+            }
+
+        }
+
+        
+
+
+    </script>
+</body>
+</html>
