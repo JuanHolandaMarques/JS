@@ -10,7 +10,7 @@
     
    <div id="origemPais">
 
-    Digite seu país de origem: <input type="text" name="nacionalidade" id="nacionalidade">
+    Digite seu país de origem: <input type="text" name="nacionalidade" id="nacionalidade" placeholder="Ex:Brasil">
 
     </div>
 
@@ -21,10 +21,12 @@
     </div>
 
     <script>
-        var paisOrigem = document.getElementById('origemPais')
+        var resNacio = document.querySelector('input#nacionalidade')
 
         function veriNacio(){
             var resOrigem = document.querySelector('div#resPais')
+
+            var paisOrigem = resNacio.value
 
             if( paisOrigem == 'Brasil'){
                 resOrigem.innerHTML = 'Ok, você é daqui.'
