@@ -19,21 +19,42 @@
     <main>
 
         <div id="anoNasc">
-            Ano de Nascimento: <input type="number" name="numNasc" id="numNasc">
+            <label for="numNasc">
+                Ano de nascimento:
+            </label>
+
+            <input type="number" name="numNasc" id="numNasc">
         </div> 
             
         <div id="sexo">
+            <label for="boxSex">
+                 Sexo:
+            </label>
 
-            Sexo: <input type="checkbox" name="mascSex" id="mascSex"> Masculino
-            <input type="checkbox" name="femSex" id="femSex"> Feminino
+            <input type="radio" name="boxSex" id="boxSex" checked >
+
+            <label for="boxSex">
+                Masculino
+            </label>
+
+            <input type="radio" name="boxSex" id="boxSex">
+
+            <label for="boxSex">
+                Feminino
+            </label>
+
         </div>
 
         <div>
-            <input type="button" value="Verificar" id="verificar">
+            <input type="button" value="Verificar" onclick="verificar()">
+        </div>
+        
+        <div id="divImg">
+            <img src="imagens/adulto-homem.jpg" alt="foto-idade" id="img" hidden>
         </div>
 
-        <div id="aviso">
-            <p>
+        <div>
+            <p id="result">
                 Preencha os dados acima para ver resultado
             </p>
         </div>
@@ -45,6 +66,6 @@
         </p>
     </footer>
 
-    <script src="js/script"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
