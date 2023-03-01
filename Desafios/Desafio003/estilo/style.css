@@ -16,7 +16,6 @@ header{
 main{
     background-color: white;
     width: 400px;
-    height: 250px;
     padding: 5px;
     margin: auto;
 
@@ -24,12 +23,11 @@ main{
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.301);
 }
 
-section>p{
-    
-   padding-left: 10px;
-}
-
 section>div{
     text-align: left;
     padding: 10px;
+}
+
+#result{
+    text-align: center;
 }
