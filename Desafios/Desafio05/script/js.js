@@ -1,23 +1,32 @@
-let formValoresTxt = document.getElementById('formNumeros')
-let valores = document.getElementById('valores')
+let formNumber = document.querySelector('input#formNumeros').value
+let valores = document.querySelector('select#valores')
+let resultado = document.querySelector('section#resultado')
+let valor = []
 
-
-
-function adicionar(){
-    let item = document.createElement('option')
-    let formValores = Number(formValoresTxt.value)
-    let resultado = document.getElementById('resultado')
-    let valor = []
-    valor.push(formValores)
-    
-    for(let contForm in valor ){
-
-        item.text = ` ${valor[contForm]} ` 
-
+function seNumero(num){
+    if( num >= 1 && num <= 100 ){
+        return true
+    }else{
+        return false
     }
 
-    valores.appendChild(item)
+}
 
-    
+function naLista(num, list){
+    if( list.indexOf(num != -1) ){
+        return true
+    }else{
+        return false
+    }
+}
+
+function adicionar(){
+    valor.push(formNumber.value)
+
+    if(seNumero(valor) && !naLista(formNumber, valor) ){
+        resultado.innerHTML = formNumber.value
+    }else{
+        resultado.innerHTML = formNumber
+    }
 
 }
